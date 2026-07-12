@@ -2,19 +2,45 @@
 
 > Turn your unused numpad into a multitasking powerhouse.
 
-NumpadOS is a lightweight Windows launcher that transforms your numpad into a fast productivity and multitasking command center.
+NumpadOS is a lightweight Windows launcher that transforms an unused numpad into a fast productivity and multitasking command center using AutoHotkey v2.
 
-## Features
+---
+
+## ✨ Features
 
 - 🚀 Launch applications instantly
-- 🌐 Open websites with a single key
+- 🌐 Open websites with one key
 - 📂 Open folders and files
-- 🖥️ Manage Windows quickly
+- 🖥️ Window management shortcuts
+- 🔔 Toast notifications
 - ⚡ Lightweight and fast
 - 🔧 Easy to customize
 
-## Status
+---
 
-🚧 This project is currently under development.
+## 📁 Project Structure
 
-More documentation and screenshots will be added soon.
+```
+NumpadOS
+│
+├── Source
+├── Assets
+├── Docs
+├── Screenshots
+├── LICENSE
+└── README.md
+```
+
+---
+
+## 📌 Status
+
+🚧 Currently under active development.
+
+The first stable release will be **v1.0.0**.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
