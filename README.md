@@ -1,30 +1,48 @@
 # NumpadOS
 
-> **Turn your unused numpad into a multitasking powerhouse.**
+<div align="center">
 
-NumpadOS is a lightweight Windows productivity launcher built with **AutoHotkey v2**. It transforms an unused numpad into a powerful command center for launching applications, Brave PWAs, managing windows, and accessing frequently used tools—all with a single key press.
+# ⌨️ NumpadOS
+
+### Turn your unused numpad into a multitasking powerhouse.
+
+A lightweight Windows productivity launcher built with **AutoHotkey v2**.
+
+Launch applications, Brave PWAs, manage windows, and access your favorite tools directly from your numpad.
+
+> **Version:** v1.0.0
+
+</div>
 
 ---
 
-## ✨ Features
+# ✨ Features
 
 - 🚀 Launch desktop applications instantly
 - 🌐 Launch Brave Progressive Web Apps (PWAs)
-- 🪟 Activate existing windows instead of opening duplicates
-- 📂 Open frequently used folders and tools
-- 🖥️ Window management shortcuts
+- 🪟 Automatically activate existing windows instead of opening duplicates
 - 📋 Clipboard History shortcut
 - ⚙️ Windows Settings shortcut
+- 🖥 Window management shortcuts
 - 🔔 Optional toast notifications
-- 📝 Built-in logging for troubleshooting
-- ⚡ Lightweight and fast
-- 🛠️ Easy to customize using `Config.ini`
+- 📝 Debug logging
+- ⚡ Lightweight
+- 💾 Portable
+- 🛠 Easy to configure using `Config.ini`
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-> Screenshots will be added in a future update.
+> Screenshots will be added soon.
+
+```
+Screenshots/
+├── Desktop.png
+├── Toast.png
+├── Config.png
+└── GitHub.png
+```
 
 ---
 
@@ -40,58 +58,140 @@ NumpadOS is a lightweight Windows productivity launcher built with **AutoHotkey 
 
 1. Download the latest release.
 2. Extract the ZIP file.
-3. Install **AutoHotkey v2** if it is not already installed.
-4. Open the project folder.
-5. Double-click `Launcher.ahk`.
+3. Install **AutoHotkey v2**.
+4. Open the extracted folder.
+5. Double-click:
+
+```
+Launcher.ahk
+```
 
 NumpadOS will start and remain in the system tray.
 
 ---
 
-# ⚙️ Configuration
+# 🛠 First-Time Setup
 
-Most settings can be changed by editing **Config.ini**.
+Before using NumpadOS, configure the paths inside `Config.ini`.
 
-After changing the configuration, reload the script by:
-
-- Pressing **Ctrl + Num Lock**
-- or right-clicking the AutoHotkey tray icon → **Reload Script**
+Every computer is different, so you may need to update the default paths.
 
 ---
 
-## 🖥️ Configure Desktop Applications
+## Finding an application's `.exe` path
 
-Open `Config.ini`.
+### Method 1 (Recommended)
 
-Edit the application paths under the **Applications** section.
+1. Open the Start Menu.
+2. Search for the application.
+3. Right-click it.
+4. Select **Open file location**.
+5. Right-click the shortcut.
+6. Select **Properties**.
+7. Click **Open File Location** (if available).
+8. Copy the full path to the executable.
+
+Example:
+
+```text
+C:\Program Files\Microsoft VS Code\Code.exe
+```
+
+Paste that path into `Config.ini`.
+
+---
+
+### Method 2
+
+If the application is already running:
+
+1. Press **Ctrl + Shift + Esc**
+2. Open **Task Manager**
+3. Right-click the application
+4. Click **Open file location**
+
+---
+
+# 🌐 Finding Brave PWA Shortcuts
+
+ChatGPT, Claude, YouTube and other web apps are launched using **Brave App shortcuts (.lnk files)**.
+
+### Method 1
+
+Install the website as a Brave App.
+
+Then:
+
+1. Press **Win + R**
+2. Type
+
+```text
+shell:programs
+```
+
+3. Press Enter.
+4. Open the **Brave Apps** folder.
+5. Locate your application.
+
+Example:
+
+```
+ChatGPT.lnk
+Claude.lnk
+YouTube.lnk
+```
+
+Right-click the shortcut.
+
+Choose:
+
+```
+Properties
+```
+
+Copy its location.
+
+Example:
+
+```text
+C:\Users\YourName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Brave Apps\ChatGPT.lnk
+```
+
+Paste it into `Config.ini`.
+
+---
+
+# ⚙️ Configuration
+
+Open
+
+```
+Config.ini
+```
+
+and edit the application paths.
 
 Example:
 
 ```ini
 HarmonoidPath=C:\Program Files\Harmonoid\harmonoid.exe
+
 ObsidianPath=C:\Program Files\Obsidian\Obsidian.exe
+
 VSCodePath=code
+
 CommandPromptPath=cmd.exe
+
 NotepadPath=notepad.exe
+
 BravePath=C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe
+
 TaskManagerPath=taskmgr.exe
 ```
 
-If an application is installed elsewhere, simply replace the path.
-
 ---
 
-## 🌐 Configure Brave PWAs
-
-ChatGPT, Claude and YouTube are launched using **Brave App shortcuts (.lnk files)**.
-
-Edit these values inside `Config.ini`:
-
-```ini
-ChatGPTShortcut=
-ClaudeShortcut=
-YouTubeShortcut=
-```
+## Configure Brave PWAs
 
 Example:
 
@@ -103,54 +203,40 @@ ClaudeShortcut=C:\Users\YourName\AppData\Roaming\Microsoft\Windows\Start Menu\Pr
 YouTubeShortcut=C:\Users\YourName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Brave Apps\YouTube.lnk
 ```
 
-If your shortcut names are different, simply point them to the correct `.lnk` files.
+Simply replace the paths with your own.
 
 ---
 
-## 🔔 Toast Notifications
+# 🔄 Reload After Editing
 
-```ini
-ShowToasts=1
-ToastDuration=800
-```
+Whenever you edit `Config.ini` you must reload NumpadOS.
 
-Set:
+You can reload by:
 
-```ini
-ShowToasts=0
-```
+- Pressing **Ctrl + Num Lock**
 
-to disable notifications.
+or
+
+- Right-click the AutoHotkey tray icon
+- Select **Reload Script**
 
 ---
 
-## 📝 Debug Logging
+# 🔁 After Restarting Windows
 
-Enable detailed logging by changing:
+If Windows restarts or your computer reboots:
 
-```ini
-DebugMode=1
-```
+- Double-click `Launcher.ahk` again to start NumpadOS.
 
-Logs are saved automatically and can help diagnose problems.
+If you have enabled automatic startup in your configuration, NumpadOS will launch automatically when you sign in.
 
 ---
 
-## 🚀 Launch on Startup
+# ⌨️ Default Hotkeys
 
-To automatically launch NumpadOS when Windows starts:
+Version **1.0.0** includes a fixed hotkey layout.
 
-```ini
-LaunchOnStartup=1
-```
-
----
-
-# ⌨️ Default Numpad Layout
-
-The default key assignments are configured for productivity.
-
-Examples include:
+Examples include launching:
 
 - ChatGPT
 - Claude
@@ -158,30 +244,72 @@ Examples include:
 - Obsidian
 - VS Code
 - Calculator
-- Windows Settings
+
+and shortcuts for:
+
 - Clipboard History
+- Windows Settings
 - Window management
 
-The application paths can be changed through **Config.ini**.
-
-> **Note:** In **v1.0.0**, the key layout itself is fixed. A future version will allow users to customize key assignments without editing the source code.
+> **Note:** The hotkey layout is fixed in v1.0.0. Future versions will allow users to customize key assignments without editing the source code.
 
 ---
 
-# 📄 Logging
+# 💡 Tips
 
-NumpadOS automatically creates log files for debugging.
+- Keep **Num Lock OFF** to use NumpadOS shortcuts.
+- Turn **Num Lock ON** to use the numpad normally.
+- Reload the script after editing `Config.ini`.
+- Enable `DebugMode=1` if something is not working.
 
-If something is not working:
+---
 
-1. Enable
+# 📝 Logging
+
+NumpadOS can create log files for troubleshooting.
+
+Enable:
 
 ```ini
 DebugMode=1
 ```
 
-2. Reproduce the issue.
-3. Check the generated log file.
+Then reproduce the issue and inspect the generated log.
+
+---
+
+# ❓ Troubleshooting
+
+## Nothing happens when pressing a hotkey
+
+- Verify AutoHotkey v2 is installed.
+- Make sure `Launcher.ahk` is running.
+- Check the tray icon.
+- Verify the application path in `Config.ini`.
+
+---
+
+## ChatGPT or Claude won't open
+
+Verify the `.lnk` shortcut exists and points to the correct Brave App.
+
+---
+
+## Wrong application launches
+
+Double-check the configured path in `Config.ini`.
+
+---
+
+## Changes don't apply
+
+Reload the script:
+
+- **Ctrl + Num Lock**
+
+or
+
+- Tray Icon → Reload Script
 
 ---
 
@@ -189,37 +317,38 @@ DebugMode=1
 
 - Windows only
 - Requires AutoHotkey v2
-- Hotkey layout is fixed in v1.0.0
+- Fixed hotkey layout
 - Brave PWAs must already be installed
 
 ---
 
-# 🗺️ Roadmap
+# 🗺 Roadmap
 
-## v1.0.0
+## ✅ v1.0.0
 
-- ✅ Desktop application launcher
-- ✅ Brave PWA launcher
-- ✅ Window management
-- ✅ Config.ini support
-- ✅ Logging
-- ✅ Toast notifications
+- Desktop application launcher
+- Brave PWA launcher
+- Window management
+- Config.ini support
+- Logging
+- Toast notifications
 
-## Future
+## 🚀 Future
 
 - Custom hotkey mapping
-- Graphical configuration tool
-- More launcher modules
-- Better startup integration
+- Graphical settings window
+- Additional launcher modules
 - Plugin support
+- Themes
+- Automatic updater
 
 ---
 
 # 🤝 Contributing
 
-Contributions, bug reports and feature requests are welcome.
+Bug reports, feature requests and pull requests are welcome.
 
-If you find a bug or have an idea for improving NumpadOS, please open an Issue or submit a Pull Request.
+If you discover a bug or have an idea to improve NumpadOS, please open an Issue on GitHub.
 
 ---
 
@@ -228,3 +357,13 @@ If you find a bug or have an idea for improving NumpadOS, please open an Issue o
 This project is licensed under the MIT License.
 
 See the `LICENSE` file for details.
+
+---
+
+<div align="center">
+
+Made with ❤️ using AutoHotkey v2
+
+If you like this project, consider giving it a ⭐ on GitHub!
+
+</div>
