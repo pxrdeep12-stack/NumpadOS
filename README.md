@@ -385,7 +385,7 @@ See the `LICENSE` file for details.
 
 <div align="center">
 
-Made with ❤️ using AutoHotkey v2
+Made and Devloped Using Claude and ChatGPT 🤝 v2
 
 If you like this project, consider giving it a ⭐ on GitHub!
 
