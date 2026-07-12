@@ -1,24 +1,40 @@
 <p align="center">
-  <img src="Assets/Banner.png" alt="NumpadOS Banner">
+  <img src="Assets/Banner.png" alt="NumpadOS Banner" width="100%">
 </p>
 
-# NumpadOS
+<h1 align="center">NumpadOS</h1>
 
-> Turn your unused numpad into a multitasking powerhouse.
-# NumpadOS
+<p align="center">
+  <strong>Turn your unused numpad into a multitasking powerhouse.</strong>
+</p>
 
-<div align="center">
-
-# ⌨️ NumpadOS
-
-### Turn your unused numpad into a multitasking powerhouse.
-
-A lightweight Windows productivity launcher built with **AutoHotkey v2**.
-
+<p align="center">
+A lightweight, open-source Windows productivity launcher built with <strong>AutoHotkey v2</strong>.
+<br>
 Launch applications, Brave PWAs, manage windows, and access your favorite tools directly from your numpad.
+</p>
 
-> **Version:** v1.0.0
+<p align="center">
 
+![Version](https://img.shields.io/badge/Version-v1.0.0-2ea44f)
+
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D7)
+
+![AutoHotkey](https://img.shields.io/badge/AutoHotkey-v2-334455)
+
+![License](https://img.shields.io/badge/License-MIT-blue)
+
+</p>
+
+---
+
+> **NumpadOS transforms an unused numpad into a customizable productivity launcher.**
+>
+> With a single key press you can launch desktop applications, Brave PWAs, control windows, open Windows tools, and streamline your daily workflow without taking your hands off the keyboard.
+
+---
+
+## ✨ Features
 </div>
 
 ---
