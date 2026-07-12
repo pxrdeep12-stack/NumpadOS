@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="Assets/Banner.png" alt="NumpadOS Banner">
+</p>
+
+# NumpadOS
+
+> Turn your unused numpad into a multitasking powerhouse.
 # NumpadOS
 
 <div align="center">
