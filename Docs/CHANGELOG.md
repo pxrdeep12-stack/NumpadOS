@@ -1,13 +1,16 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+## v1.0.0
 
-## [1.0.0] - 2026-07-12
+Initial public release.
 
 ### Added
-- Professional repository structure
-- Initial README
-- MIT License
-- Source modules
-- Configuration file
-- Project documentation
+
+- Desktop application launcher
+- Brave PWA launcher
+- Window management shortcuts
+- Clipboard History
+- Windows Settings
+- Toast notifications
+- Config.ini configuration
+- Debug logging
