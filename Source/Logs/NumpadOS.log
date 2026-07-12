@@ -1,0 +1,20 @@
+﻿[2026-07-12 19:45:27] [INFO] Created directory: C:\Users\pxrde\OneDrive\Documents\PROJECTNUMPAD\NumpadOS-v1.0.0\Logs
+[2026-07-12 19:45:27] [INFO] ===== NumpadOS Starting =====
+[2026-07-12 19:45:27] [INFO] Configuration loaded successfully
+[2026-07-12 19:45:27] [INFO] Hotkeys registered
+[2026-07-12 19:45:27] [INFO] NumpadOS initialized successfully
+[2026-07-12 19:45:27] [INFO] NumpadOS ready. Num Lock controls numpad mode.
+[2026-07-12 19:45:33] [INFO] Activated Brave PWA 'ChatGPT' (Title: ChatGPT - GitHub Repository Setup)
+[2026-07-12 19:45:35] [INFO] Activated Brave PWA 'Claude' (Title: Claude - AutoHotkey configuration refactoring - Claude)
+[2026-07-12 19:45:36] [INFO] Activated Brave PWA 'ChatGPT' (Title: ChatGPT - GitHub Repository Setup)
+[2026-07-12 19:45:36] [INFO] Activated Brave PWA 'Claude' (Title: Claude - AutoHotkey configuration refactoring - Claude)
+[2026-07-12 19:45:37] [INFO] Activated Brave PWA 'ChatGPT' (Title: ChatGPT - GitHub Repository Setup)
+[2026-07-12 19:45:37] [INFO] Activated Brave PWA 'Claude' (Title: Claude - AutoHotkey configuration refactoring - Claude)
+[2026-07-12 19:45:37] [INFO] Activated Brave PWA 'ChatGPT' (Title: ChatGPT - GitHub Repository Setup)
+[2026-07-12 19:45:38] [INFO] Activated Brave PWA 'Claude' (Title: Claude - AutoHotkey configuration refactoring - Claude)
+[2026-07-12 19:45:38] [INFO] Activated Brave PWA 'ChatGPT' (Title: ChatGPT - GitHub Repository Setup)
+[2026-07-12 19:45:39] [INFO] Launching desktop app: Harmonoid (C:\Harmonoid\harmonoid.exe)
+[2026-07-12 19:45:41] [INFO] Activated desktop app: Harmonoid
+[2026-07-12 19:45:41] [INFO] Successfully launched desktop app: Harmonoid
+[2026-07-12 19:49:18] [INFO] NumpadOS exiting - Reason: Menu, Code: 0
+[2026-07-12 19:49:18] [INFO] ===== NumpadOS Stopped =====
