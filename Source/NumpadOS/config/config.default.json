@@ -1,0 +1,12 @@
+{
+    "settings": {
+        "runAtStartup": false,
+        "startMinimized": false,
+        "runLauncherAfterLogin": false,
+        "showTrayIcon": true,
+        "checkForUpdates": true,
+        "runAsAdmin": false,
+        "launcherNumLockMode": "off"
+    },
+    "shortcuts": []
+}
