@@ -76,9 +76,10 @@ Click **Add Shortcut**
 
 ## Main Window
 
-(Screenshots/01_home.png)
+![Main Window](Screenshots/01_home.png)
 
 ---
+
 
 Choose:
 
