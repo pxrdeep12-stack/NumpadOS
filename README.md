@@ -35,7 +35,7 @@ A modern Windows productivity launcher built with <b>AutoHotkey v2</b>.
 
 ## Main Window
 
-![Main Window](Screenshots/Homepage.png)
+![Main Window](Screenshots/home.png)
 
 ---
 
@@ -80,28 +80,91 @@ Click **Add Shortcut**
 
 ---
 
+## Step 1 — Select a Numpad Key
 
-Choose:
+Choose an available numpad key from the **Numpad Key** dropdown.
 
-- Numpad Key
-- Shortcut Type
-- Target
+Examples:1,2,3,4,5,6,7,8,9,0,*,/,+ etc.
 
-Save.
+> **Note:** Keys that are already assigned cannot be selected until they are freed.
 
-Your shortcut is ready.
+## Step 2 — Choose the Shortcut Type
+
+Select what you want the key to launch.
+
+Currently supported shortcut types:
+
+- 🖥️ Application
+- 📁 Folder
+- 🌐 Website
+- ⌨️ Keyboard Shortcut
+
+## Step 3 — Configure the Shortcut
+
+Fill in the required information based on the shortcut type you selected.
+
+### 🖥️ Application 
+
+Browse or paste the full path to the application's executable (`.exe`).
+(If you don't know how to find application.exe the the steps to find it are given below)
+**Example**
+
+```
+C:\Program Files\Microsoft VS Code\Code.exe
+```
 
 ---
 
-# 📁 Supported Shortcut Types
+### 📁 Folder
 
-✅ Application (.exe)
+Browse or paste the folder path.
 
-✅ Folder
+**Example**
 
-✅ Website
+```
+D:\Projects
+```
 
-✅ Keyboard Shortcut
+---
+
+### 🌐 Website
+
+Enter the complete website URL.
+
+**Example**
+
+```
+https://chatgpt.com
+```
+
+---
+
+### ⌨️ Keyboard Shortcut
+
+Enter the keyboard combination you want to execute.
+
+**Examples**
+
+```
+Ctrl + C
+Ctrl + Shift + V
+Win + E
+Alt + Tab
+```
+
+## Step 4 — Save
+
+Click **Save** to store your shortcut.
+
+The Launcher will automatically reload the configuration (or prompt you to reload if required).
+
+---
+
+## 🎉 Done!
+
+Your shortcut is now ready to use.
+
+Simply press the assigned **Numpad Key** and NumpadOS will launch the configured action instantly.
 
 ---
 
