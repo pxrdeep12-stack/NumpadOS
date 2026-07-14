@@ -74,6 +74,12 @@ That's it.
 
 Click **Add Shortcut**
 
+## Main Window
+
+(Screenshots/01_home.png)
+
+---
+
 Choose:
 
 - Numpad Key
