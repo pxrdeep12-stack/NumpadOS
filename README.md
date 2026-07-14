@@ -35,7 +35,7 @@ A modern Windows productivity launcher built with <b>AutoHotkey v2</b>.
 
 ## Main Window
 
-![Main Window](Screenshots/01_home.png)
+![Main Window](Screenshots/Homepage.png)
 
 ---
 
